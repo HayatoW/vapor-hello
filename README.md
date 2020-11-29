@@ -14,13 +14,13 @@ docker run --rm -d \
 ## PostgreSQLに接続する
 
 ```shell
-postgres
+su postgres
 psql
 ```
 
 ### PostgreSQLにアプリケーション用のユーザ作成
 
-```shell
+```postgres
 create user vapor;
 \password vapor
 ```
@@ -28,6 +28,6 @@ create user vapor;
 ### PostgreSQLにアプリケーション用のデータベース作成
 
 
-```shell
+```postgres
 create database vapor;
 ```
